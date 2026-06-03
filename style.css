@@ -1,0 +1,276 @@
+/* Reset default styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+     background:linear-gradient(to right,#D0E8E5,#faa6a8);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #0b0101;
+    
+}
+/* Container */
+.container {
+    /* width: 80%; */
+    margin: auto;
+    overflow: hidden;
+   
+}
+/* adding logo for the site */
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #524f4c;
+    text-decoration: none;
+}
+/* Username being displayed */
+.username {
+    font-size: 18px;
+    color: #080501;
+    font-weight: bold;
+}
+/* Button styles where i have defined them */
+button{
+    background-color: #8f95fb;
+    color: #fff;
+    border-radius: 5px;
+    border:#524f4c;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/* hover styles for the username to look attractive */
+.username button:hover{
+    text-decoration: underline;
+    color: #030504;
+} 
+
+/* Navigation Bar where the navigation elements are placed  and styled */
+.navbar{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+/* Navigation styles where the navigation elements are styled */
+.nav-links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    
+    color: #5f5e5d;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+    color: #8f95fb;
+}
+
+
+/* Hero section styles */
+.hero{
+    /* width: 100%; */
+    padding: 70px 50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    min-height:80vh;
+    gap:50px;
+}
+/* Hero content styles where the content is styled in left hand side */
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:60px;
+    line-height:1.2;
+    color:#3c4b5c;
+    margin-bottom:20px;
+}
+
+.hero-content .highlight{
+    color:#19a7ff;
+}
+
+.hero-content p{
+    color:#8a8a8a;
+    font-size:20px;
+    line-height:1.8;
+    max-width:550px;
+    margin-bottom:30px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+/* Hero image styles where the image is styled on the left hand side */
+.hero-image img{
+    width: 60vh;
+    max-width:500px;
+}
+.btn{
+    background-color: #0f5885;
+    color: #fff;
+    border: none;
+    padding: 25px 50px;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #0b3d66;
+}
+
+/* Tablet Breakpoint */
+
+@media (max-width: 1024px){
+    nav{
+        padding: 15px 30px;
+    }
+
+    .nav-links{
+        gap: 20px;
+    }
+
+    .hero{
+        padding: 40px 30px;
+    }
+
+    .hero-content h1{
+        font-size: 45px;
+    }
+
+    .hero-content p{
+        font-size: 16px;
+    }
+
+    .hero-image img{
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+
+/* Mobile Breakpoint */
+@media (max-width:768px){
+nav{
+        padding: 15px 20px;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    .nav-links{
+        gap: 12px;
+    }
+
+    .nav-links a{
+        font-size: 14px;
+    }
+
+    .username button{
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .hero{
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .hero-content{
+        width: 55%;
+    }
+
+    .hero-image{
+        width: 40%;
+    }
+
+    .hero-content h1{
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .hero-content p{
+        font-size: 15px;
+    }
+
+    .hero-image img{
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 600px){
+  .nav-links{
+        display: none;
+    }
+
+    nav{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo{
+        font-size: 18px;
+    }
+
+    .username button{
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .hero{
+        flex-direction: column;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .hero-content,
+    .hero-image{
+        width: 100%;
+    }
+
+    .hero-content h1{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .btn{
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .hero-image{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .hero-image img{
+        width: 75%;
+        max-width: 250px;
+    }
+}
